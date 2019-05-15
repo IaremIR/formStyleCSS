@@ -1,0 +1,148 @@
+body{
+ background: #212123;
+ margin:0;
+ font-family: 'Franklin Gothic Medium';  
+}
+
+header{
+    background:#212123;
+    padding: 20px;
+
+}
+img{
+    padding: 120px 130px;
+    width: 0;
+    height: 0;
+    background-color:#212123;
+    background-blend-mode: multiply;
+    background-image: url("img/fitness.png");
+  }
+  form{
+      margin: 20px;
+      color: #eee;
+  }
+  form p{
+      font-size: 18px;
+      font-family: Georgia, serif;
+      letter-spacing: 1px
+  }
+  input[type="radio"]{
+      opacity: 0;
+      width: 0;
+      margin: 0;
+
+}
+  label[for="male"], label[for="female"], label[for="other"]{
+      transition:all .3s ease-out;
+      margin-bottom: 10px;
+      display: inline-block;
+      padding-left: 30px;
+      background: url("img/checks.png") no-repeat;
+      background-position: 0 -32px;
+      line-height: 20px;
+      cursor: nw-resize;
+}
+
+input:checked + label[for="male"],
+input:checked + label[for="female"],
+input:checked + label[for="other"]{
+    background-position: 0 0;
+    color: #000000;
+    
+}
+
+input[type="checkbox"]{
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+label[for="yoga"], label[for="pilates"], label[for="lifting"]{
+    transition:all .3s ease-out;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 30px; 
+    background: url("img/checks.png") no-repeat;
+    background-position: 0 -100px;
+    line-height: 20px;
+    cursor: nw-resize;
+}
+input:checked + label[for="yoga"],
+input:checked + label[for="pilates"],
+input:checked + label[for="lifting"]{
+    background-position: 0 -65px;
+    color: #000000;
+    
+}
+fieldset{
+    margin: 10px 20px 10px 0;
+    padding: 10px;
+    border: 2px solid ;
+    width: 280px;
+}
+legend{
+    font-size: 20px;
+    font-family: Georgia, serif;
+    letter-spacing: 1px
+}
+input[type = "email"],input[type = "telephone"]{
+    display:block;
+    margin: 10px;
+    padding: 10px 20px 10px 40px;
+    border-radius: 8px;
+    font-size: 12px;
+    background: url("img/inputs.png") no-repeat;
+    color:#eee;
+    background-color:#3A3A41;
+    float: left;
+    clear:both;
+}
+input[type = "email"]{
+    background-position: 8px 5px;
+}
+input[type = "telephone"]{
+    background-position: 8px -58px;
+}
+select{
+    -webkit-appearance: none;
+    appearance: none;
+
+    display: block; 
+    margin: 25px 0;
+    padding: 8px 30px 8px 8px;
+    background: url("img/select.png") no-repeat;
+    background-position: 80px;
+    color:#eee;
+    background-color:#3A3A41;
+    border-radius: 8px;
+    border:1px solid;
+    width: 100px;
+    
+}
+input[type="submit"]{
+    display:block;
+    background:#E71E0D;
+    padding:5px;
+    color:#eee;
+    letter-spacing: 1px;
+    border-radius:6px;
+    font-size: 15px;
+    border:0;
+    box-shadow: 1px 3px 5px 5px rgba(0,0,0,0.5);
+    width:100px
+}
+
+input[type="email"]:valid,
+input[type="telephone"]:valid{
+    border:3px solid #000000;
+}  
+input[type="email"]:valid + .tick,
+input[type="telephone"]:valid + .tick{
+    background: url("img/tick.png") center;
+    background-size:100%;
+    display:block;
+    float:left;
+    margin:10px;
+    width:15px;
+    height:15px;
+ }
+ 

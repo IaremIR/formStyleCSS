@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet" type=text/css> </head> <body>
+    <header>
+        <img src="img/fitness.png" />
+    </header>
+
+    <form id="myForm">
+        <p> Välj din gender </p>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male"> Man </label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female"> Kvinna </label><br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Tredje kön</label>
+
+        <p>Välj träningsform</p>
+        <input type="checkbox" id="yoga" name="training">
+        <label for="yoga">Yoga</label><br>
+        <input type="checkbox" id="pilates" name="training">
+        <label for="pilates">Pilates</label><br>
+        <input type="checkbox" id="lifting" name="training">
+        <label for="lifting">Styrketräning</label>
+
+        <fieldset>
+            <legend>Kontakt info</legend>
+            <input type="email" id="email" placeholder="Email" required />
+            <span class="tick"></span>
+            <input type="telephone" id="phone" placeholder="Telefonnummer" required />
+            <span class="tick"></span>
+        </fieldset>
+
+        <p>Vill du bli kontaktad via:</p>
+        <select class="contacted">
+            <option value="email">email</option>
+            <option value="phone">telefon</option>
+        </select>
+
+
+        <input type="submit" value="Bli medlem">
+        <!-- <div id = 'loader'>
+            <img src = 'img/giphy.gif' alt = 'spinner'>
+        </div> -->
+
+    </form>
+    <script src="app.js"></script>
+    </body>
+
+</html>
